@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const links = document.querySelectorAll('a[href^="#"]');
+
+        links.forEach((link) => {
+          link.addEventListener("click", function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute("href").substring(1);
+            const targetElement = document.getElementById(targetId);
+            if (targetElement) {
+              const offsetTop = targetElement.offsetTop;
+              window.scrollTo({
+                top: offsetTop,
+                behavior: "smooth",
+              });
+            }
+          });
+        });
+      });
+    </script>
+
+    <div class="main_div">
+      <div class="navbar">
+        <div class="navbar_img">
+          <img
+            src="images.jpeg"
+            alt=""
+          />
+        </div>
+
+        <div class="footer_main">
+          <div class="child_footer">
+            <a href="https://www.instagram.com/hafiz__0007/"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
+          <div class="child_footer">
+            <a href="https://www.facebook.com/login"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+          </div>
+          <div class="child_footer">
+            <a href="https://github.com/dhukkahafiz"
+              ><i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+          <div class="child_footer">
+            <a href="https://twitter.com/login"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="navbar_number">
+          <p>
+            <i class="fa-solid fa-phone"></i>
+            +91 6354082462
+          </p>
+
+          <p>
+            <i class="fa-solid fa-envelope"></i>
+            hafizdhukka431@gmail.com
+          </p>
+        </div>
+      </div>
+
+      <div class="bg_image">
+        <div class="printer">
+          <div class="printer_title">
+            <p>Computer</p>
+          </div>
+
+          <div class="printer_underline"><span></span></div>
+
+          <div class="printer_def">
+            <p>
+              When most people hear the word computer, they think of a personal
+              computer such as a desktop or laptop. However, computers come in
+              many shapes and sizes, and they perform many different functions
+              in our daily lives. When you withdraw cash from an ATM, scan
+              groceries at the store, or use a calculator, you're using a type
+              of computer. .
+            </p>
+          </div>
+
+          <div class="printer_title">
+            <p>Types Of Computer</p>
+          </div>
+
+          <div class="printer_underline"><span></span></div>
+
+          <div class="printer_type">
+            <ul>
+              <li><b>❖ There are Types of Computer.</b></li>
+              <li>1). Based On Size</li>
+              <div class="types">
+                <ul>
+                  <li><a href="#Super">i).Super</a></li>
+                  <li><a href="#Mainframe">ii).Mainframe </a></li>
+                  <li><a href="#Mini">iii).Mini</a></li>
+                  <li><a href="#Micro">iv).Micro</a></li>
+                </ul>
+              </div>
+              <li>2). Based On Mechanism</li>
+              <div class="types">
+                <ul>
+                  <li><a href="#Analog">i).Analog</a></li>
+                  <li><a href="#Digital">ii).Digital </a></li>
+                  <li><a href="#Hybrid">iii).Hybrid</a></li>
+                </ul>
+              </div>
+              <li>3). Based On purpose</li>
+              <div class="types">
+                <ul>
+                  <li><a href="#General-purpose">i).General-purpose</a></li>
+                  <li><a href="#Special-purpose">ii).Special-purpose </a></li>
+                </ul>
+              </div>
+            </ul>
+          </div>
+
+          <div class="printer_title" id="Super">
+            <p>Super:-</p>
+          </div>
+
+          <div class="printer_underline"><span></span></div>
+
+          <div class="main_printer">
+            <div class="main_printer_img">
+              <img src="super.jpeg" alt="hy" />
+            </div>
+            <div class="main_printer_text">
+              <p>
+                A supercomputer is a computer that performs at or near the
+                highest operational rate for computers.<br />
+
+                Traditionally, supercomputers have been used for scientific and
+                engineering applications that must handle massive databases, do
+                a great amount of computation or both. Advances like multicore
+                processors and general-purpose graphics processing units have
+                enabled powerful machines that could be called desktop
+                supercomputers or GPU supercomputers. .
+              </p>
+            </div>
+          </div>
+
+          <div class="printer_title" id="Mainframe">
+            <p>Mainframe :-</p>
+          </div>
+
+          <div class="printer_underline"><span></span></div>
+
+          <div class="main_printer">
+            <div class="main_printer_img">
+              <img src="Mainframe-Architecture.png" alt="hy" />
+            </div>
+            <div class="main_printer_text">
+              <p>
+                A mainframe is defined as a large, powerful computer typically
+                used for complex calculations and data processing tasks. It can
+                connect to multiple end clients simultaneously so that several
+                users can access different applications and processes running on
+                the mainframe concurrently without impacting performance or
+                security. This article explains how mainframes work and
+                discusses their importance, even in the age of cloud computing.
+              </p>
+            </div>
+          </div>
+
+          <div class="printer_title" id="Mini">
+            <p>Mini:-</p>
+          </div>
+
+          <div class="printer_underline"><span></span></div>
+
+          <div class="main_printer">
+            <div class="main_printer_img">
+              <img src="mini.png" alt="hy" />
+            </div>
+            <div class="main_printer_text">
+              <p>
+                Minicomputers were introduced in the 1960s and were typically
+                smaller and less expensive than mainframe computers. In this
+                article, we will briefly discuss different examples of
+                minicomputers,This article will briefly discuss what a
+                mini-computer is, its types, example of mini computer, and the
+                advantages and disadvantages of a mini-computer. <br />
+              </p>
+            </div>
+          </div>
+
+          <div class="printer_title" id="Micro">
+            <p>Micro:-</p>
+          </div>
+
+          <div class="printer_underline"><span></span></div>
+
+          <div class="main_printer">
+            <div class="main_printer_img">
+              <img src="micro.png" alt="hy" />
+            </div>
+            <div class="main_printer_text">
+              <p>
+                A microcomputer is a complete computer on a small scale,
+                designed for use by one person at a time. An antiquated term, a
+                microcomputer is now primarily called a personal computer (PC),
+                or a device based on a single-chip microprocessor. Common
+                microcomputers include laptops and desktops.
+              </p>
+            </div>
+          </div>
+
+          <div class="printer_title" id="Analog">
+            <p>Analog:-</p>
+          </div>
+
+          <div class="printer_underline"><span></span></div>
+
+          <div class="main_printer">
+            <div class="main_printer_img">
+              <img src="Analog.webp" style="height: 350px" alt="hy" />
+            </div>
+            <div class="main_printer_text">
+              <p>
+                Analog computer, any of a class of devices in which continuously
+                variable physical quantities, such as electrical potential,
+                fluid pressure, or mechanical motion, are represented in a way
+                analogous to the corresponding quantities in the problem to be
+                solved. The analog system is set up according to initial
+                conditions and then allowed to change freely. Answers to the
+                problem are obtained by measuring the variables in the analog
+                model. See also digital computer.
+              </p>
+            </div>
+          </div>
+
+          <div class="printer_title" id="Digital">
+            <p>Digital:-</p>
+          </div>
+
+          <div class="printer_underline"><span></span></div>
+
+          <div class="main_printer">
+            <div class="main_printer_img">
+              <img src="digital.webp" alt="hy" />
+            </div>
+            <div class="main_printer_text">
+              <p>
+                Digital computer, any of a class of devices capable of solving
+                problems by processing information in discrete form. It operates
+                on data, including magnitudes, letters, and symbols, that are
+                expressed in binary code—i.e., using only the two digits 0 and
+                1. By counting, comparing, and manipulating.
+              </p>
+            </div>
+          </div>
+
+          <div class="printer_title" id="Hybrid">
+            <p>Hybrid:-</p>
+          </div>
+
+          <div class="printer_underline"><span></span></div>
+
+          <div class="main_printer">
+            <div class="main_printer_img">
+              <img src="hybrid.png" alt="hy" />
+            </div>
+            <div class="main_printer_text">
+              <p>
+                A hybrid computer is a type of computer that offers the
+                functionalities of both a digital and an analog computer. It is
+                designed to include a working analog unit that is powerful for
+                calculations, yet has a readily available digital memory. In
+                large industries and businesses, a hybrid computer can be used
+                to incorporate logical operations as well as provide efficient
+                processing of differential equations.
+              </p>
+            </div>
+          </div>
+
+          <div class="printer_title" id="General-purpose">
+            <p>General-purpose:-</p>
+          </div>
+
+          <div class="printer_underline"><span></span></div>
+
+          <div class="main_printer">
+            <div class="main_printer_img">
+              <img src="genrel.webp" alt="hy" />
+            </div>
+            <div class="main_printer_text">
+              <p>
+                A general-purpose computer refers to a device designed to
+                perform a wide range of tasks and applications, rather than
+                being limited to specific functions. It is a versatile computing
+                machine that can be programmed to execute various software
+                programs, handle diverse data types, and perform different
+                operations.
+              </p>
+            </div>
+          </div>
+
+          <div class="printer_title" id="Special-purpose">
+            <p>Special-purpose:-</p>
+          </div>
+
+          <div class="printer_underline"><span></span></div>
+
+          <div class="main_printer">
+            <div class="main_printer_img">
+              <img src="spacial.png" alt="hy" />
+            </div>
+            <div class="main_printer_text">
+              <p>
+                There are various classes of computer systems based on their
+                computational speed, usage, and hardware. The following are some
+                special-purpose systems according to specific applications. They
+                use: Real-time embedded systems Multimedia systems<br />
+                Multimedia systems<br />
+                Handheld and portable systems<br />
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text">
+        <!-- <div>
+        <p><a href=""></a>THIS CREATED BY DHUKAMUHAMMAD</p>
+      </div> -->
+
+        <div class="footer">
+          <div class="footer_tnx">
+            <p>TANKS FOR VISITING MY WEBSITE</p>
+          </div>
+
+          <div class="footer_main">
+            <div class="child_footer">
+              <a href="https://www.instagram.com/hafiz__0007/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </div>
+            <div class="child_footer">
+              <a href="https://www.facebook.com/login"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+            </div>
+            <div class="child_footer">
+              <a href="https://github.com/dhukkahafiz"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+            <div class="child_footer">
+              <a href="https://twitter.com/login"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="footer_copy">
+            <p>Copyright © 2023 Hafiz . All Rights Reserved</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="arrow" onclick="scrollToTop()">
+      <i class="fa-solid fa-arrow-up"></i>
+    </div>
+  
+   
+    <script>
+      function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    </script>
+  </body>
+</html>
